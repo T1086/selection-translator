@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "note": "Pinned download sources for the optional local translation model. Every file is verified against its SHA-256 before it is used. To update: change the tag/URLs, then copy size and sha256 from the GitHub release asset digest or the Hugging Face LFS pointer.",
+  "llama_cpp": {
+    "tag": "b11160",
+    "license": "MIT",
+    "license_url": "https://github.com/ggml-org/llama.cpp/blob/master/LICENSE"
+  },
+  "runtimes": [
+    {
+      "id": "cuda12",
+      "gpu": true,
+      "min_nvidia_driver": 551.61,
+      "provides": "llama-server.exe",
+      "licenses": ["MIT", "NVIDIA CUDA EULA"],
+      "files": [
+        {
+          "name": "llama-b11160-bin-win-cuda-12.4-x64.zip",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11160/llama-b11160-bin-win-cuda-12.4-x64.zip",
+          "size": 254621982,
+          "sha256": "e2bcd71b9a03e4ed7d8bdf77f129eb682d63bbff244ef24fbbe40f1003368763"
+        },
+        {
+          "name": "cudart-llama-bin-win-cuda-12.4-x64.zip",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11160/cudart-llama-bin-win-cuda-12.4-x64.zip",
+          "size": 391443627,
+          "sha256": "8c79a9b226de4b3cacfd1f83d24f962d0773be79f1e7b75c6af4ded7e32ae1d6"
+        }
+      ]
+    },
+    {
+      "id": "vulkan",
+      "gpu": true,
+      "provides": "llama-server.exe",
+      "licenses": ["MIT"],
+      "files": [
+        {
+          "name": "llama-b11160-bin-win-vulkan-x64.zip",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11160/llama-b11160-bin-win-vulkan-x64.zip",
+          "size": 32450504,
+          "sha256": "55d67f0596a268f8fa710a1762c0cbde3c4c96c716512c80a57cb4d867c036d0"
+        }
+      ]
+    },
+    {
+      "id": "cpu",
+      "gpu": false,
+      "provides": "llama-server.exe",
+      "licenses": ["MIT"],
+      "files": [
+        {
+          "name": "llama-b11160-bin-win-cpu-x64.zip",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11160/llama-b11160-bin-win-cpu-x64.zip",
+          "size": 18561557,
+          "sha256": "b144d125972c57eb30062524269b31bf981dfb81d36fad6a1494e18814a06acc"
+        }
+      ]
+    }
+  ],
+  "model_license": {
+    "name": "Apache-2.0",
+    "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/blob/main/LICENSE.txt"
+  },
+  "models": [
+    {
+      "id": "q4_k_m",
+      "file": "Hy-MT2-1.8B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q4_K_M.gguf",
+      "size": 1133080448,
+      "sha256": "dc5f44fcf1fa496ee7ad725982c0c8c553a4de00259b53af84c4b89fb0c06699"
+    },
+    {
+      "id": "q6_k",
+      "file": "Hy-MT2-1.8B-Q6_K.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q6_K.gguf",
+      "size": 1474785120,
+      "sha256": "d98fe604dec1f28f58f80d7d560f7177e584d3b8e5835862687660e5ff97cb40"
+    },
+    {
+      "id": "q8_0",
+      "file": "Hy-MT2-1.8B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q8_0.gguf",
+      "size": 1908528192,
+      "sha256": "5c3fe0b1408a5ceb0143184ef247b11b579c525f4b02b060e6c851bb76fef1a4"
+    }
+  ]
+}
