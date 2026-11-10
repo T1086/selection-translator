@@ -1,0 +1,43 @@
+# API keys (must never be committed)
+secret.txt
+secret_microsoft.txt
+
+# Personal settings; the template is config.example.ini
+config.ini
+
+# Large files: downloaded or generated, see the README
+llama/
+llama.new/
+models/
+downloads/
+dict/ecdict.dat
+dict/ecdict.idx
+
+# Run-time logs and self-check reports (contain local details)
+*.log
+SelfCheckReport.txt
+
+# Personal bookmarks and their backups
+bookmarks.json*
+
+# Build output and release packages
+*.exe
+dist/
+build/
+*.zip
+
+# Editor and system files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Private development notes
+TODO.md
+
+# Private test script
+e2e.ahk
+
+# Private self-check tool
+SelfCheck*.ahk
+SelfCheck.bat
