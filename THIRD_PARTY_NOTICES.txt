@@ -1,0 +1,52 @@
+第三方组件声明 / Third-Party Notices
+=====================================
+
+本项目自身使用 MIT 许可证（见 LICENSE）。
+This project is licensed under the MIT License (see LICENSE).
+
+下列组件的许可证全文见 LICENSES\ 目录。
+Full license texts of the components below are in the LICENSES\ directory.
+
+随本项目分发 / Distributed with this project
+---------------------------------------------
+
+1. ECDICT  ——  dict\ecdict.dat, dict\ecdict.idx（Release 包内 / in the release zip）
+   Copyright (c) 2025 Linwei
+   License: MIT License
+   Source : https://github.com/skywind3000/ECDICT
+   Text   : LICENSES\ECDICT-MIT.txt
+   The files in dict\ are a converted (re-indexed) form of ECDICT's ecdict.csv,
+   produced by tools\build_dict.py.
+
+不随本项目分发，由用户自行下载 / NOT distributed; downloaded by the user
+------------------------------------------------------------------------
+
+下列组件不包含在本仓库或 Release 包中，用户从官方渠道自行下载；此处列出供参考。
+The following are NOT included in this repository or the release zip. Users
+download them from the official sources; they are listed here for reference.
+
+2. Hy-MT2-1.8B (GGUF)  ——  models\
+   Copyright (C) 2026 Tencent. All rights reserved.
+   License: Apache License, Version 2.0
+   Source : https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF
+   Text   : LICENSES\Hy-MT2-Apache-2.0.txt
+
+3. llama.cpp  ——  llama\ (llama-server and related libraries)
+   Copyright (c) 2023-2026 The ggml authors
+   License: MIT License
+   Source : https://github.com/ggml-org/llama.cpp
+   Text   : LICENSES\llama.cpp-MIT.txt
+   The official Windows builds may include the LLVM OpenMP runtime
+   (see LICENSES\LLVM-OpenMP.txt) and, for the CUDA builds, NVIDIA CUDA runtime
+   libraries distributed under the NVIDIA CUDA Toolkit EULA
+   (https://docs.nvidia.com/cuda/eula/index.html).
+
+4. AutoHotkey v2
+   License: GPLv2 (https://www.autohotkey.com/docs/v2/license.htm)
+   Install it separately to run the scripts from source. The compiled release
+   embeds the AutoHotkey runtime, so the complete source of this project is
+   published in the public repository.
+
+本软件与腾讯、NVIDIA、Microsoft、DeepL、ggml 项目及 ECDICT 作者无隶属或背书关系。
+This software is not affiliated with or endorsed by Tencent, NVIDIA, Microsoft,
+DeepL, the ggml project, or the ECDICT author.
